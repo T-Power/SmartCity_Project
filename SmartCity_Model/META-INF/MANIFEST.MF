@@ -1,16 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: %pluginName
-Bundle-SymbolicName: com.tnt.smartcity;singleton:=true
-Automatic-Module-Name: com.tnt.smartcity
+Bundle-Name: com.tnt.smartcity
+Bundle-SymbolicName: com.tnt.smartcity; singleton:=true
 Bundle-Version: 0.1.0.qualifier
-Bundle-ClassPath: .
-Bundle-Vendor: %providerName
-Bundle-Localization: plugin
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
-Export-Package: SmartCity,
- SmartCity.impl,
- SmartCity.util
-Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.emf.ecore;visibility:=reexport
-Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.emf.ecore
