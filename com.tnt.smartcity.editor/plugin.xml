@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated citygenerator -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="SmartCity.presentation.SmartCityModelWizardID"
+            name="%_UI_SmartCityModelWizard_label"
+            class="SmartCity.presentation.SmartCityModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SmartCityModelFile.gif">
+         <description>%_UI_SmartCityModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated citygenerator -->
+      <editor
+            id="SmartCity.presentation.SmartCityEditorID"
+            name="%_UI_SmartCityEditor_label"
+            icon="icons/full/obj16/SmartCityModelFile.gif"
+            extensions="smartcity"
+            class="SmartCity.presentation.SmartCityEditor"
+            contributorClass="SmartCity.presentation.SmartCityActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
