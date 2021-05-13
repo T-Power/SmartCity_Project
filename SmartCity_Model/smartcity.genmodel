@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.tnt.smartcity/src" modelPluginID="com.tnt.smartcity"
+    modelName="Smartcity" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>model/smartcity.ecore</foreignModel>
+  <genPackages prefix="SmartCity" disposableProviderFactory="true" ecorePackage="smartcity.ecore#/">
+    <genClasses ecoreClass="smartcity.ecore#//SmartCity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//SmartCity/cityName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartcity.ecore#//SmartCity/cityDevices"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartcity.ecore#//SmartCity/institutions"/>
+    </genClasses>
+    <genClasses ecoreClass="smartcity.ecore#//CityDevice">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//CityDevice/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//CityDevice/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//CityDevice/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartcity.ecore#//CityDevice/location"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartcity.ecore#//CityDevice/sensors"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartcity.ecore#//CityDevice/controlUnits"/>
+    </genClasses>
+    <genClasses ecoreClass="smartcity.ecore#//Sensor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//Sensor/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//Sensor/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//Sensor/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//Sensor/timestamp"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartcity.ecore#//Sensor/properties"/>
+    </genClasses>
+    <genClasses ecoreClass="smartcity.ecore#//ControlUnit">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//ControlUnit/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//ControlUnit/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//ControlUnit/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartcity.ecore#//ControlUnit/properties"/>
+    </genClasses>
+    <genClasses ecoreClass="smartcity.ecore#//Location">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//Location/longitude"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//Location/latitude"/>
+    </genClasses>
+    <genClasses ecoreClass="smartcity.ecore#//Property">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//Property/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//Property/value"/>
+    </genClasses>
+    <genClasses ecoreClass="smartcity.ecore#//Institution">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//Institution/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//Institution/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//Institution/responsibility"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartcity.ecore#//Institution/dataFiles"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference smartcity.ecore#//Institution/location"/>
+    </genClasses>
+    <genClasses ecoreClass="smartcity.ecore#//DataFile">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//DataFile/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//DataFile/dataType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute smartcity.ecore#//DataFile/dataPath"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
