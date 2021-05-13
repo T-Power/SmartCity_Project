@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.tnt.smartcity:SmartCityBase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.tnt.smartcity="http://com/tnt/smartcity">
+  <cityDevices>
+    <location/>
+    <sensors>
+      <properties/>
+    </sensors>
+    <sensors>
+      <properties/>
+    </sensors>
+  </cityDevices>
+  <cityDevices>
+    <location/>
+    <controlUnits>
+      <properties/>
+    </controlUnits>
+  </cityDevices>
+  <institutions>
+    <dataFiles/>
+    <location/>
+  </institutions>
+</com.tnt.smartcity:SmartCityBase>
