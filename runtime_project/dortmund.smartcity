@@ -15,7 +15,7 @@
       <properties name="power" value="on"/>
     </controlUnits>
   </cityDevices>
-  <cityDevices name="LED_Schild_0" description="LED Straßenschild 0">
+  <cityDevices id="2" name="LED_Schild_0" description="LED Straßenschild 0">
     <location longitude="7.438991823735839" latitude="51.49906102409077"/>
     <controlUnits name="Textfeld_0" description="LED Schild Textfeld 0">
       <properties name="text" value="30 km/h"/>
@@ -23,7 +23,7 @@
       <properties name="power" value="on"/>
     </controlUnits>
   </cityDevices>
-  <cityDevices id="1" name="LED_Schild_1" description="LED Straßenschild 1">
+  <cityDevices id="3" name="LED_Schild_1" description="LED Straßenschild 1">
     <location longitude="7.438905993052324" latitude="51.498907406947936"/>
     <controlUnits id="1" name="Textfeld_1" description="LED Schild Textfeld 1">
       <properties name="text" value="50 km/h"/>
@@ -31,9 +31,35 @@
       <properties name="power" value="off"/>
     </controlUnits>
   </cityDevices>
-  <cityDevices/>
-  <institutions>
-    <dataFiles/>
-    <location/>
+  <cityDevices id="4" name="Parkplatz 0" description="Parkplatz Hauptbahnhof ">
+    <location longitude="7.462095347273528" latitude="51.516021116455065"/>
+    <sensors id="1" name="Lichtschranke_0" description="Lichtschranke Parkplatz 0" timestamp="2021-05-19_10:57">
+      <properties name="interrupted" value="true"/>
+    </sensors>
+    <sensors id="2" name="Lichtschranke_1" description="Lichtschranke Parkplatz 1" timestamp="2021-05-19_10:57">
+      <properties name="interrupted" value="true"/>
+    </sensors>
+    <sensors id="3" name="Lichtschranke_2" description="Lichtschranke Parkplatz 2" timestamp="2021-05-19_10:57">
+      <properties name="interrupted" value="false"/>
+    </sensors>
+    <sensors id="4" name="Lichtschranke_3" description="Lichtschranke Parkplatz 3" timestamp="2021-05-19_10:57">
+      <properties name="interrupted" value="flase"/>
+    </sensors>
+  </cityDevices>
+  <institutions name="Stadtverwaltung" responsibility="Stadtverwaltung von Dortmund">
+    <dataFiles dataType="PDF" dataPath="./dortmund_north_streets"/>
+    <dataFiles id="1" dataType="PDF" dataPath="./dortmund_est_streets"/>
+    <dataFiles id="2" dataType="PDF" dataPath="./dortmund_west_streets"/>
+    <location longitude="7.465496833576976" latitude="51.51131691377699"/>
+  </institutions>
+  <institutions id="1" name="DEW21" responsibility="Strom und Gas Versorgung">
+    <dataFiles id="3" dataType="XML" dataPath="./stromnetz_dortmund.xml"/>
+    <dataFiles id="4" dataType="XML" dataPath="./gasnetz_dortmund.xml"/>
+    <location longitude="7.455060028819405" latitude="51.50295755493635"/>
+  </institutions>
+  <institutions name="Tiefbauamt" responsibility="Tiefbauamt Dortmund">
+    <dataFiles id="5" dataType="PDF" dataPath="./tunnelnetz.pdf"/>
+    <dataFiles id="6" dataType="PDF" dataPath="./zechenstruktur_verzeichnis.pdf"/>
+    <location longitude="7.456072162534426" latitude="51.50132391536951"/>
   </institutions>
 </com.tnt.smartcity:SmartCityBase>
