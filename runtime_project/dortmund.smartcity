@@ -1,20 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.tnt.smartcity:SmartCityBase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.tnt.smartcity="http://com/tnt/smartcity">
-  <cityDevices>
-    <location/>
-    <sensors>
-      <properties/>
+<com.tnt.smartcity:SmartCityBase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.tnt.smartcity="http://com/tnt/smartcity" cityName="Dortmund">
+  <cityDevices name="Laterne_0" description="Laterne 0 im Stadtpark">
+    <location longitude="7.437393227085478" latitude="51.50324856161018"/>
+    <sensors name="Tempsensor_0" description="Temperatursensor 0 an Laterne 0" timestamp="2021-05-19_10:59">
+      <properties name="temperature" value="18.5"/>
     </sensors>
-    <sensors>
-      <properties/>
-    </sensors>
-  </cityDevices>
-  <cityDevices>
-    <location/>
-    <controlUnits>
-      <properties/>
+    <controlUnits name="Lampe_0" description="Lampe 0 and Laterne 0">
+      <properties name="power" value="on"/>
     </controlUnits>
   </cityDevices>
+  <cityDevices id="1" name="Laterne_1" description="Laterne 1 im Stadtpark">
+    <location longitude="7.437725820984106" latitude="51.5027142879761"/>
+    <controlUnits id="1" name="Lampe_1" description="Lampe 1 and Laterne 1">
+      <properties name="power" value="on"/>
+    </controlUnits>
+  </cityDevices>
+  <cityDevices name="LED_Schild_0" description="LED Straßenschild 0">
+    <location longitude="7.438991823735839" latitude="51.49906102409077"/>
+    <controlUnits name="Textfeld_0" description="LED Schild Textfeld 0">
+      <properties name="text" value="30 km/h"/>
+      <properties name="brightness" value="50"/>
+      <properties name="power" value="on"/>
+    </controlUnits>
+  </cityDevices>
+  <cityDevices id="1" name="LED_Schild_1" description="LED Straßenschild 1">
+    <location longitude="7.438905993052324" latitude="51.498907406947936"/>
+    <controlUnits id="1" name="Textfeld_1" description="LED Schild Textfeld 1">
+      <properties name="text" value="50 km/h"/>
+      <properties name="brightness" value="500"/>
+      <properties name="power" value="off"/>
+    </controlUnits>
+  </cityDevices>
+  <cityDevices/>
   <institutions>
     <dataFiles/>
     <location/>
